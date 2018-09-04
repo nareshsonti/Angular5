@@ -1,0 +1,71 @@
+<div class="panel panel-primary" *ngFor="let employee of employees">
+  <div class="panel-heading">
+    <h3 class="pannel-title">
+      {{employee.name}}
+    </h3>
+  </div>
+  <div class="panel-body">
+    <div class="col-xs-10">
+      <div class="row vertical-align">
+
+        <div class="cols-xs-4">
+
+          <img class="imageClass" [src]="employee.photoPath" />
+
+        </div>
+        <div class="cols-xs-8">
+          <div class="row ">
+
+            <div class="cols-xs-6">
+              Gender
+            </div>
+            <div class="cols-xs-6">
+              : {{employee.gender}}
+            </div>
+
+            <div class="cols-xs-6">
+              Email
+            </div>
+            <div class="cols-xs-6">
+              : {{employee.Email}}
+            </div>
+
+            <div class="cols-xs-6">
+              Contact Preference
+            </div>
+            <div class="cols-xs-6">
+              : {{employee.contactPreference}}
+            </div>
+
+            <div class="cols-xs-6">
+              Phone Number
+            </div>
+            <div class="cols-xs-6">
+              : {{employee.phoneNumber}}
+            </div>
+
+            <div class="cols-xs-6">
+              Department
+            </div>
+            <div class="cols-xs-6">
+              : {{employee.department}}
+            </div>
+
+            <div class="cols-xs-6">
+              Is Active
+            </div>
+            <div class="cols-xs-6">
+              : {{employee.isActive}}
+            </div>
+            <div class="cols-xs-6">
+              Date Of Birth
+            </div>
+            <div class="cols-xs-6">
+              : {{employee.dateOfBirth | date}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>>
